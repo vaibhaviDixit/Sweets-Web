@@ -1,0 +1,11 @@
+.inner{
+		width: 90%;
+		padding:20px 20px;
+		float: none;
+		
+}
+
+.about .text{
+		font-size:3vw;
+		text-align: justify;
+}

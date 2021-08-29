@@ -1,0 +1,426 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+html,body{
+	height: 100%;
+}
+
+#wrap{
+	min-height: 100%;
+}
+header{
+	background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('bakery.jpg');
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+
+}
+
+/*navbar*/
+.main{
+	display: flex;
+	width: 100%;position: fixed;
+	/*background-color:rgba(100,100,100,.5);*/
+	background-color:black;
+	z-index: 1;
+	height: 72px;
+	transition: height .3s ease-out;
+
+}
+.nav{
+	display: flex;
+	margin: auto;
+
+}
+
+
+.nav-list{
+	display: flex;
+	transition: all .8s ease-out;
+}
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+	font-size: .8rem;
+
+}
+
+.logo{
+	width: 20%;
+	color:orange;
+	font-family:arial;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin:10px 10px;
+	font-size: 35px;
+	margin-left: 0px;
+}
+.nav-list li {
+ 
+	list-style-type: none;
+	padding: 5px 10px;
+	margin:15px 10px;
+	border-bottom: 2px solid transparent;
+	transition:border-bottom  1s ease;
+	text-align: right;
+	
+
+}
+
+.nav-list li:hover{
+   color: tomato;
+   border-bottom: 2px solid tomato;
+
+}
+
+.btn{
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	border-radius: 9px;outline: none;cursor: pointer;
+	padding: 3px 5px ;
+}
+.btn:hover{
+	background-color: black;
+}
+
+.search{
+	display: block;
+	margin: 18px;
+
+}
+.search input{
+	border: 1px solid white;
+    font-size: 15px;
+	border-radius: 9px;outline: none;
+	padding: 2px 3px;
+}
+.burger{
+	    position: absolute;
+		display: none;
+		cursor: pointer;
+}
+.line{
+	width: 35px;
+	background-color: white;
+	height: 4px;
+	margin: 6px 3px;
+
+}
+
+
+
+/*header*/
+.content{
+	color: white;
+	font-family:sans-serif;
+	position: absolute;
+	font-size:250%;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%); 
+	overflow: hidden;
+
+
+}
+.content .para{
+		font-size: 40px;
+}
+.content span{
+	animation: blink 1s infinite;
+
+}
+.btn-big{
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;transition: all .3s;
+	border-radius: 6px;outline: none;cursor: pointer;
+	padding: 5px 10px ;font-size: 20px;margin-top: 20px;
+}
+.btn-big:hover{
+	background-color:green;
+}
+@keyframes blink{
+	0%{color: yellow;}
+	25%{color: tomato;}
+	50%{color: orange;}
+	100%{color:cyan;}
+}
+.center{text-align: center;}
+
+/*about us*/
+.about{
+	background: url(bakery.jpg) no-repeat left;
+	background-size: 55%;
+	background-color: #fdfdfd;
+	overflow: hidden;
+	padding: 100px 0px;
+	margin: 50px auto;
+}
+.inner{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd; 
+	padding:60px;
+}
+.about h1{
+	
+	font-size:1.4rem;
+	 display: inline;
+    border-bottom: 2px solid #3e2121;
+}
+.about .text{
+	font-size:1.6vw;
+	text-align: justify;
+	padding: 25px 0px;
+}
+
+/*Services*/
+
+.services-section{
+	margin-bottom: 100px;
+
+}
+.services{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+    
+}
+.box{
+	background-color: #e2dbdf;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+	padding: 10px 25px;
+	margin: 15px 35px; 
+	border-radius: 9px;
+
+
+}
+.heading{
+	margin: 30px 0px;
+	font-size:.7rem;
+
+}
+.box h3{
+	font-size: 19px;
+}
+.box img{
+	width: 20%;
+
+}
+.box p{
+	font-size: 18px;
+}
+.box img,h3,p{
+	padding: 4px;
+}
+.desc{
+	font-size: 1rem;
+}
+
+/*.items-list li:nth-child(){
+		border-right:grey 2px solid ;
+}*/
+.items-list li{
+
+	list-style: none;
+    border-right:grey 2px solid ;
+	margin: 0px 3px;
+	padding: 0px 9px;
+}
+iframe{
+	width: 100%;
+	margin: 50px 0px 0px 0px;
+	height: 800px;
+	position: relative;
+	overflow: auto;
+}
+
+
+
+.items-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.items-list li a{
+	text-decoration: none;
+	padding:0px 3px;
+	color: black;
+	transition: color .3s ease-out;
+
+}
+.items-list li:hover a{color: tomato;}
+.items-list li:focus a{color: tomato;}
+
+.items-photos{
+	width: 100%;
+	display: flex;
+	margin: 0px auto;
+    justify-content:center;
+     /*align-items: center;*/
+     transition: all .8s ease;
+    flex-wrap: wrap;
+
+
+}
+.photos{
+		margin: 50px 20px 5px 20px;
+		padding: 0px;
+		border-radius: 10px;
+		transition: all .8s ease;
+	    border: 1px solid white;
+
+}
+.photos img{ 
+	width: 200px;
+    padding: 0px;
+	border-radius: 10px;
+	border: 1px solid white;
+	transition: all .8s ease;
+
+}
+
+.photos img:hover{
+	transform: scale(1.4);
+} 
+
+
+/*footer*/
+#contact{
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url('img/cake3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	justify-content: center;align-items: center;align-content: center;
+	height: auto;
+	position: relative;
+
+}
+.contact-us{
+	padding: 20px 30px;
+	background-color:rgba(140,118,104,.5);
+	border-radius: 4px;
+	margin: 10px 20px;
+	
+}
+.contact-heading{
+	font-size: 30px;
+	color:tomato;
+}
+
+.form input,textarea{
+     width: 100%;
+     font-size: 20px;
+     color:#000;
+     font-weight: 500;
+     border: none;
+     outline: none;
+     padding: 3px 2px;
+     margin: 10px 0px;
+     background-color:rgb(208,192,183);
+     border: 2px solid transparent;
+     border-radius: 7px;
+
+
+}
+.form input:focus,textarea:focus{
+	border: 2px solid black;
+}
+
+.submit-btn{
+	outline: none;border:1px solid white;
+	background-color: transparent;
+	padding: 5px 7px;
+	font-size:.8em;
+	color: white;
+	font-weight: 400;
+	cursor: pointer;
+
+
+}
+.submit-btn:hover{
+	background-color: rgb(140,118,104);
+
+}
+.foo{
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	
+}
+
+.fa {
+  padding: 10px;
+  font-size: 2rem;
+  /*width: 25px;*/
+  border-radius:50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #ff0066;
+  color: white;
+}
+.social{
+	padding: 15px 0px;
+}
+.address {
+	padding: 10px 0px 30px 0px;
+}
+.address p{
+	padding: 10px 0px;
+	font-size: 1.2rem;
+}
+.copyright{
+	background-color: #000;
+	color: white;
+	width: 100%;
+	padding: 10px 0px;
+	font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
